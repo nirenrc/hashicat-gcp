@@ -59,8 +59,9 @@ resource "google_compute_instance" "hashicat" {
   tags = ["http-server"]
   
   labels = {
-    name = "billable",
-    value = "true"
+    name = "hashicat"
+    deppartment = "devops"
+    billable = true
   }
 
 }
