@@ -1,0 +1,25 @@
+2021/01/14 16:19:11 [INFO] Terraform version: 0.13.4  
+2021/01/14 16:19:11 [INFO] Go runtime version: go1.14.7
+2021/01/14 16:19:11 [INFO] CLI args: []string{"/usr/local/bin/terraform", "init"}
+2021/01/14 16:19:11 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2021/01/14 16:19:11 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021/01/14 16:19:11 Loading CLI configuration from /root/.terraform.d/credentials.tfrc.json
+panic: can't convert []map[string]interface {}{map[string]interface {}{"auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs", "auth_uri":"https://accounts.google.com/o/oauth2/auth", "client_email":"service-account@p-y96b5dmgv0dxpnvw3iquqzu2837r.iam.gserviceaccount.com", "client_id":"104192067204246107347", "client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/service-account%40p-y96b5dmgv0dxpnvw3iquqzu2837r.iam.gserviceaccount.com", "private_key":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCb3UMxju91YaQZ\nlRLYHG5PC4MyTvOpT7L/Sb+Tu5cEZHqxt/RAC+xLqMigiH9WD2IOyvjk4s0ag63b\n+rom/+CCgo4B3dAMD9+6kvDSVooAR/duAcMNlxp9ffiTUeO763k3gVfrv1xGMoFH\nyaJ6b36kK4NrFZ+KwZEt6MW5+k8JY8ctoSYzMdAqqvC+9oZ9HLVLHNrYR3GWpxO+\n/z0k2S3G2nexahOFauLXY99yFSIbDJwE5hZ4ci5oDqdvJmFDrZUsmxVWHzq59Heo\ncIYch5M+l0H98WxJT2UGV/gfcmBFq2rkBrm4i+JFtDDCdLu8lxVvYt9vgJQedSlL\noMNZ30uxAgMBAAECggEAEKCSsc9nvYPvDPOZkQhnaXNMSapL1Wdf1wViXzuHKWbM\nAqLMdvtOopDyO33pkkq4e+TXQcOYJxieYXXmieaIvXjOoWWs82cgx4yJYvGXGInq\nMV1qwMu6fbdZ3zgV1/mPctu6Kgy9++xuB4nRFXKeIJwBEa662FiR85h+D2Wj14Js\nyV6Kui8LZbQKgV21K+Y013SAPzK2ovvpbEKbANPcKjxyrqzwSIQunGOO3px9+fx1\nGD50I5zcZWpTgEwJ2izvk4GFPG+pUPZRW9Cu+6JSjrd1hiKe+N9a/3ouPnxY8iQX\nlUEYVZuDoKlAgandWomvmFaK36jZA3aPn/bK0k/lSQKBgQDMtTdYdtvDEbEoHlMh\nsFsGLQiQPIk8VlY/Y4bdv78IHBeVCBUnyzFwaCEJFd4ZGJ0GFxRagedhIyXtchht\nIKPXNIwZhVhiD1wgzu1Im1g0d46vVhIyjbEsEG5sdIi72bGVFhWxVodK+l7pqAbQ\nJ0JtNJ6bK9Cd8d+5IQDUGnR5ewKBgQDC6wYhGQJijuC67hyNF7i/MUQftFz1vpMd\niSR5VyG6Id2IfodFNuAPkqauihUhhnXFW87jdTlXZuMtEHpudBQme0C7GmR0N0pC\ntKA2JS4qxJ29ol/IdYvFu9gBD5yMVaBH2l3Msj0VAWJFQ2bzQhMudzpllAjkK/by\nA8VzP1FZwwKBgQC2Tkjc2vV6Mv5fqSoF3aYiyOZQdekOOCGVUFCimYpKcaI60jjs\n+JOt9L4+9h+WoAnvi4xP0lK6em/jl/HS9feTx7NhYxTEN8OnYEGHoPkbuMH0uqV4\nKiH4CSYeJmZDTWtOR53IEjRo/LKcSkzPAbexw+Pgc1PV5buFhrPTMUA7kwKBgGRT\nG8CFYtjfuYP9cuycPRcLgIjhCMfj40zcfc2Gr3FiZOgQWAekCwd48Bn+MIok7xE6\nA+7HM1BtQJi9VobrcEOuRM8I8pNuseZLmfrEgFK7CIXGwY4oEl0gJjnFk0oX+HuD\nRaxKQW5CXBZSbvbeF4lfDMujuj/W8S/4CPUcrf6JAoGAM8fEKxvi41rDHP2W3oZ+\nVJ9TUs/VcS4bPWssWGNcsQ6Qqo7CQ9JsHpqhGxoa4fBMXa4hcNu9BFEu0Wcjzvcw\nDNLdGyutW0ZgAuRT0ZhLtM+uDhxfgKZUSs0ys5n+Hy3ef4oMngYR1H/2H7M9BvVY\nSqryS7wcI2P74Z+u6PeDcGU=\n-----END PRIVATE KEY-----\n", "private_key_id":"2e85aa678815c104048ee815fbd03535ffbb52e2", "project_id":"p-y96b5dmgv0dxpnvw3iquqzu2837r", "token_uri":"https://oauth2.googleapis.com/token", "type":"service_account"}} to cty.Value
+
+goroutine 1 [running]:
+github.com/hashicorp/terraform/configs/hcl2shim.HCL2ValueFromConfigValue(0x21d6e40, 0xc0004a9a20, 0xc0002df6c8, 0x9, 0x26cedc5, 0x3)
+	/home/circleci/project/project/configs/hcl2shim/values.go:229 +0x805
+github.com/hashicorp/terraform/configs/hcl2shim.HCL2ValueFromConfigValue(0x2307da0, 0xc0005c56e0, 0xc00045da01, 0x10, 0x0, 0x0)
+	/home/circleci/project/project/configs/hcl2shim/values.go:223 +0x1ac
+github.com/hashicorp/terraform/command/cliconfig.(*Config).credentialsSource(0xc000595aa0, 0x0, 0x0, 0x0, 0x0, 0xc0005487b0, 0x28, 0x0)
+	/home/circleci/project/project/command/cliconfig/credentials.go:94 +0x10f
+github.com/hashicorp/terraform/command/cliconfig.(*Config).CredentialsSource(0xc000595aa0, 0xc0005c5950, 0xc0004a9e40, 0x2, 0x2)
+	/home/circleci/project/project/command/cliconfig/credentials.go:64 +0x264
+main.credentialsSource(0xc000595aa0, 0x0, 0x0, 0x0, 0x1)
+	/home/circleci/project/project/commands.go:417 +0x74
+main.wrappedMain(0x0)
+	/home/circleci/project/project/main.go:162 +0x2ac
+main.realMain(0x0)
+	/home/circleci/project/project/main.go:106 +0xde
+main.main()
+	/home/circleci/project/project/main.go:42 +0x3a
